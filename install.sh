@@ -4,6 +4,5 @@ python3 get-pip.py --user
 python3 -m pip install pandas
 python3 -m pip install requests
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs
+sudo yum install nodejs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo apt install nodejs
