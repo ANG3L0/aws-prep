@@ -8,4 +8,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 sudo dnf install python3-devel
 yum install alsa-lib-devel
 python3 -m pip install bs4
+curl https://intoli.com/install-google-chrome.sh | bash
 source ~/.bashrc
