@@ -16,4 +16,7 @@ npm install web3
 npm install --save opensea-js
 npm install -g @angular/cli # need angular cli so i can do next command, so i can use es2020, which can handle Promises.
 npm install -g typescript@latest
+curl -o- -L https://yarnpkg.com/install.sh | bash #installs yarn so i can install mnemonic provider dependencies
+yarn add @0x/subproviders #install the mnemonic provider dependencies
+npm install web3-provider-engine #need web3-provider-engine to be a subprovider for wallet.
 source ~/.bashrc
