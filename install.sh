@@ -32,4 +32,5 @@ sudo make test
 sudo make install
 cd /etc/ld.so.conf.d/
 # follow the rest here: https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
+#https://unix.stackexchange.com/questions/206100/gnu-screen-window-rename-nuisance
 source ~/.bashrc
