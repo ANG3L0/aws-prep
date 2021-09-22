@@ -19,4 +19,17 @@ npm install -g typescript@latest
 curl -o- -L https://yarnpkg.com/install.sh | bash #installs yarn so i can install mnemonic provider dependencies
 yarn add @0x/subproviders #install the mnemonic provider dependencies
 npm install web3-provider-engine #need web3-provider-engine to be a subprovider for wallet.
+sudo yum group install 'Development Tools'
+sudo yum install perl-core zlib-devel -y
+cd /usr/local/src
+sudo wget https://www.openssl.org/source/openssl-3.0.0.tar.gz
+sudo tar -xf openssl-3.0.0.tar.gz
+cd openssl-3.0.0
+sudo yum install perl-IPC-Cmd #dependency for openssl
+sudo ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared zlib
+sudo make
+sudo make test
+sudo make install
+cd /etc/ld.so.conf.d/
+# follow the rest here: https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
 source ~/.bashrc
