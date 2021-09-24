@@ -10,7 +10,6 @@ yum install alsa-lib-devel #dependency for simpleaudio
 python3 -m pip install bs4
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash - #npm
 sudo yum install -y nodejs #nodejs
-nvm install v14.17.1
 nvm install v8
 nvm install v12
 nvm use v8
