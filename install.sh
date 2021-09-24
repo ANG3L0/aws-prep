@@ -11,7 +11,9 @@ python3 -m pip install bs4
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash - #npm
 sudo yum install -y nodejs #nodejs
 nvm install v14.17.1
-nvm use v14.17.1
+nvm install v8
+nvm install v12
+nvm use v8
 npm install web3
 npm install --save opensea-js
 npm install -g @angular/cli # need angular cli so i can do next command, so i can use es2020, which can handle Promises.
