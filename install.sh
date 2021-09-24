@@ -21,16 +21,9 @@ yarn add @0x/subproviders #install the mnemonic provider dependencies
 npm install web3-provider-engine #need web3-provider-engine to be a subprovider for wallet.
 sudo yum group install 'Development Tools'
 sudo yum install perl-core zlib-devel -y
-cd /usr/local/src
-sudo wget https://www.openssl.org/source/openssl-3.0.0.tar.gz
-sudo tar -xf openssl-3.0.0.tar.gz
-cd openssl-3.0.0
-sudo yum install perl-IPC-Cmd #dependency for openssl
-sudo ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared zlib
-sudo make
-sudo make test
-sudo make install
-cd /etc/ld.so.conf.d/
+#conda
+wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+bash Anaconda3-2021.05-Linux-x86_64.sh
 # follow the rest here: https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
 #https://unix.stackexchange.com/questions/206100/gnu-screen-window-rename-nuisance
 source ~/.bashrc
