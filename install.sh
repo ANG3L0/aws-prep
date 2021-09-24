@@ -1,4 +1,5 @@
 sudo yum install python37
+#python setup
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 python3 -m pip install pandas
@@ -10,6 +11,7 @@ yum install alsa-lib-devel #dependency for simpleaudio
 python3 -m pip install bs4
 python3 -m pip install twilio
 python3 -m pip install fake-useragent
+#npm/node setup
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash - #npm
 sudo yum install -y nodejs #nodejs
 nvm install v8
@@ -19,6 +21,9 @@ npm install web3
 npm install --save opensea-js
 npm install -g @angular/cli # need angular cli so i can do next command, so i can use es2020, which can handle Promises.
 npm install -g typescript@latest
+# opensea-scraper dependencies - https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md
+sudo amazon-linux-extras install epel -y #allow amazon linux to use chromium
+sudo yum install -y chromium # chromium satisfies dependencies for opensea-scraper
 curl -o- -L https://yarnpkg.com/install.sh | bash #installs yarn so i can install mnemonic provider dependencies
 source ~/.bashrc
 yarn add @0x/subproviders #install the mnemonic provider dependencies
