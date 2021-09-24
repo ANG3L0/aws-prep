@@ -34,4 +34,5 @@ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 bash Anaconda3-2021.05-Linux-x86_64.sh
 # follow the rest here: https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
 #https://unix.stackexchange.com/questions/206100/gnu-screen-window-rename-nuisance
+#git remote set-url origin git@github.com:/username/projectname.git
 source ~/.bashrc
