@@ -31,10 +31,6 @@ yarn add @0x/subproviders #install the mnemonic provider dependencies
 npm install web3-provider-engine #need web3-provider-engine to be a subprovider for wallet.
 sudo yum group install 'Development Tools'
 sudo yum install perl-core zlib-devel -y
-#ssh keygen for github
-cd ~
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub
 #conda
 wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 bash Anaconda3-2021.05-Linux-x86_64.sh
@@ -42,3 +38,7 @@ bash Anaconda3-2021.05-Linux-x86_64.sh
 sudo sed -i 's/033k/033]0;/g' /etc/bashrc
 #git remote set-url origin git@github.com:/username/projectname.git
 source ~/.bashrc
+#ssh keygen for github
+cd ~
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
