@@ -6,8 +6,9 @@ python3 -m pip install pandas
 python3 -m pip install requests
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - #not sure what this is.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash #nvm
-sudo dnf install python3-devel #dependency for simpleaudio
-yum install alsa-lib-devel #dependency for simpleaudio
+#simpleaudio no longer needed
+#sudo dnf install python3-devel #dependency for simpleaudio
+#yum install alsa-lib-devel #dependency for simpleaudio
 python3 -m pip install bs4
 python3 -m pip install twilio
 python3 -m pip install fake-useragent
