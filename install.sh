@@ -1,4 +1,6 @@
 sudo yum install python37
+# for digitalocean centos8
+sudo yum install -y epel-release
 #python setup
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
