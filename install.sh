@@ -4,6 +4,10 @@ sudo yum install -y epel-release
 sudo yum install vim
 # need go to run geth
 sudo yum install go
+# need this to have gcc, which'll install stuff like web3js.
+sudo yum groupinstall 'Development Tools'
+# Need this so we can satisfy tsconfig where we don't have to strictly type everything.
+npm install @types/node --save-dev
 #python setup
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
