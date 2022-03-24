@@ -1,26 +1,26 @@
-sudo yum install python37
+#sudo yum install python37
 # for digitalocean centos8
-sudo yum install -y epel-release
+#sudo yum install -y epel-release
 sudo yum install vim
 # need go to run geth
-sudo yum install go
+#sudo yum install go
 # need this to have gcc, which'll install stuff like web3js.
 sudo yum groupinstall 'Development Tools'
 # Need this so we can satisfy tsconfig where we don't have to strictly type everything.
 npm install @types/node --save-dev
 #python setup
-curl -O https://bootstrap.pypa.io/get-pip.py
-python3 get-pip.py --user
-python3 -m pip install pandas
-python3 -m pip install requests
+#curl -O https://bootstrap.pypa.io/get-pip.py
+#python3 get-pip.py --user
+#python3 -m pip install pandas
+#python3 -m pip install requests
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - #not sure what this is.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash #nvm
 #simpleaudio no longer needed
 #sudo dnf install python3-devel #dependency for simpleaudio
 #yum install alsa-lib-devel #dependency for simpleaudio
-python3 -m pip install bs4
-python3 -m pip install twilio
-python3 -m pip install fake-useragent
+#python3 -m pip install bs4
+#python3 -m pip install twilio
+#python3 -m pip install fake-useragent
 #npm/node setup
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash - #npm
 sudo yum install -y nodejs #nodejs
