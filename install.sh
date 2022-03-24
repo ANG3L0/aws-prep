@@ -41,8 +41,8 @@ npm install web3-provider-engine #need web3-provider-engine to be a subprovider 
 sudo yum group install 'Development Tools'
 sudo yum install perl-core zlib-devel -y
 #conda
-wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
-bash Anaconda3-2021.05-Linux-x86_64.sh
+#wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+#bash Anaconda3-2021.05-Linux-x86_64.sh
 #https://unix.stackexchange.com/questions/206100/gnu-screen-window-rename-nuisance
 sudo sed -i 's/033k/033]0;/g' /etc/bashrc
 #git remote set-url origin git@github.com:/username/projectname.git
