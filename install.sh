@@ -46,6 +46,11 @@ sudo yum install perl-core zlib-devel -y
 #https://unix.stackexchange.com/questions/206100/gnu-screen-window-rename-nuisance
 sudo sed -i 's/033k/033]0;/g' /etc/bashrc
 #git remote set-url origin git@github.com:/username/projectname.git
+# for installing screen on centos cuz it sucks.
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo yum install -y epel-release
+sudo yum install -y screen
+
 source ~/.bashrc
 #ssh keygen for github
 cd ~
