@@ -50,6 +50,9 @@ sudo sed -i 's/033k/033]0;/g' /etc/bashrc
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 sudo yum install -y epel-release
 sudo yum install -y screen
+#syntax highlighting for vim cuz centos sucks.
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
+
 
 source ~/.bashrc
 #ssh keygen for github
